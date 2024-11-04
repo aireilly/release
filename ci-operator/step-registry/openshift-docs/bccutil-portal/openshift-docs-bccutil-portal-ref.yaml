@@ -1,0 +1,19 @@
+ref:
+  as: openshift-docs-bccutil-portal
+  commands: openshift-docs-bccutil-portal-commands.sh
+  resources:
+    requests:
+      cpu: 200m
+      memory: 200Mi
+  from: src
+  env:
+  - name: BUILD
+    default: ""
+  - name: DISTROS
+    default: ""
+  - name: VERSION
+    default: ""
+  - name: PREVIEW_SITE
+    default: ""
+  documentation: |-
+    Test the openshift-docs portal build.

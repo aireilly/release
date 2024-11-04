@@ -1,0 +1,19 @@
+ref:
+  as: openshift-docs-bccutil-preview
+  commands: openshift-docs-bccutil-preview-commands.sh
+  credentials:
+  - mount_path: /tmp/vault/ocp-docs-netlify-secret
+    name: netlify-secret
+    namespace: test-credentials
+  resources:
+    requests:
+      cpu: 200m
+      memory: 200Mi
+  from: src
+  env:
+  - name: NETLIFY_AUTH_TOKEN
+    default: ""
+  - name: PREVIEW_SITE
+    default: ""
+  documentation: |-
+    Build and deploy bccutil build of openshift-docs to Netlify.

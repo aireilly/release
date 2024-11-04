@@ -1,0 +1,13 @@
+ref:
+  as: openshift-docs-bccutil-build
+  from_image:
+    name: ccutil
+    namespace: ocp
+    tag: latest
+  commands: openshift-docs-bccutil-build-commands.sh
+  resources:
+    requests:
+      cpu: 200m
+      memory: 200Mi
+  documentation: |-
+    Build openshift-docs with bccutil container.

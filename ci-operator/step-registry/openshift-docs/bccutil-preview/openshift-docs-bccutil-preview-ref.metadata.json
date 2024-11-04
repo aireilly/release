@@ -1,0 +1,19 @@
+{
+	"path": "openshift-docs/bccutil-preview/openshift-docs-bccutil-preview-ref.yaml",
+	"owners": {
+		"approvers": [
+			"adellape",
+			"aireilly",
+			"gabriel-rh",
+			"gaurav-nelson",
+			"kalexand-rh"
+		],
+		"reviewers": [
+			"adellape",
+			"aireilly",
+			"gabriel-rh",
+			"gaurav-nelson",
+			"kalexand-rh"
+		]
+	}
+}
